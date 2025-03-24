@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSAVvOuGk_oGxps5kb1oTzRkRREJr_k2d6PoNDCGIPrl9Qk8BMI4qCIv5EBDUBmb-Eb1RSENPYVvNwAp9s" alt="Rohit Sharma" class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTakxB5gG-R9wEuiQoyJajEwE4bc9ChHff0ekSQn3EI34IuqLN2uxTmO7J6QKFvz7y_oDabI9drczup9-ufQGEIuqrYXJ18e62-VSZrRg" alt="Sung Jinwoo" class="gallery-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOaDSJB2_Xb3RzgBSAeV_tffqQEfb62NTqvA&s" alt="Lord Krishna" class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Photographer" class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg" alt="Cristiano Ronaldo" class="gallery-item">
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img class="modal-content" id="modalImage">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
